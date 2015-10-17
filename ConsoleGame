@@ -1,0 +1,4 @@
+import Pieces
+import Checkers
+
+__author__ = 'jspear'

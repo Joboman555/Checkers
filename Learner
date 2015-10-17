@@ -1,0 +1,12 @@
+import random
+
+
+__author__ = 'jspear'
+
+
+def makeMove(board, weights, whoseTurn):
+    moves = generatePossibleMoves(board, whoseTurn)
+    moveValues = {move: assignValue(move, weights) for move in moves}
+    bestMoves = getBestMoves(moveValues)
+    bestMove = pickRandomBestMove(bestMoves)
+    return bestMove
